@@ -223,7 +223,7 @@ header{
 	justify-content: center;
 }
 .header-h h1{
-	font-family: sans-serif;
+	font-family: cursive;
 	font-size: 55px;
 	position: relative;
 	padding-top: 100px;
@@ -7122,4 +7122,22 @@ button.close {
     display: none !important;
   }
 }
+
+
+@media (max-width: 1066px){
+	.header-h h1{
+		font-size: 45px;
+	}
+}
+@media (max-width: 750px){
+	.header-h h1{
+		font-size: 35px;
+	}
+}
+@media (max-width: 400px){
+	.header-h h1{
+		font-size: 25px;
+	}
+}
+
 /*# sourceMappingURL=bootstrap.css.map 
