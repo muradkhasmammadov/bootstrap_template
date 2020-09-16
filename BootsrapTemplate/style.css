@@ -193,14 +193,14 @@ th {
 }
 nav{
 	transition:500ms ease!important;
-	height: 70px;
+	/*height: 70px;*/
 	background-color: transparent!important;
+}
+.navbar-toggle{
+	margin-top: 20px!important;
 }
 .navbar.scrolled{
   background:#fff;
-}
-.navbar{
-	position: fixed!important;
 }
 .navbar-right li{
 	font-size: 17px;
@@ -211,11 +211,6 @@ nav{
 .navbar-brand{
 	margin-top: 10px;
 }
-/*.navbar-collapse{
-	background-color: #fff;
-	position: relative;
-	z-index: 1211;
-}*/
 header{
 	min-height: 100vh;
 	background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/bg-masthead.jpg') no-repeat;
@@ -262,6 +257,9 @@ header{
 	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;
+	position: relative;
+	padding-bottom: 50px;
+
 }
 .header-button button{
 	width: 160px;
@@ -272,11 +270,11 @@ header{
 	background-color:#f4623a;
 	margin-top: 30px;
 }
-.first-section{
+#first-section{
 	min-height: 70vh;
 	background-color:#f4623a;
 	text-align: center;
-	padding-top: 10%;
+	padding-top: 50px;
 }
 .first-section-h{
 	display: flex;
@@ -324,7 +322,7 @@ header{
 	background-color:#fff;
 	margin-top: 30px;
 }
-.service{
+#service{
 	min-height: 80vh;
 	text-align: center;
 	padding-top: 10%;
@@ -340,11 +338,11 @@ header{
 	font-size: 70px;
 	color: #f4623a;
 }
-.service h3{
+#service h3{
 	font-family: sans-serif;
 	font-weight: bold;
 }
-.service p{
+#service p{
 	font-size: 18px;
 	color: #6c757d;
 	width: 270px; 
@@ -353,82 +351,44 @@ header{
 	transform: translate(-50%,-50%);
 	padding-top: 40px;
 }
+#images{
+	overflow-x: hidden;
+}
+.back{
+	width: 100%;
+  	height: 100%;
+ 	position: absolute;
+  	z-index: 1;
+  	transition-duration: .5s;
+}
+.back p{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	color: #f4623a;
+	font-weight: bold;
+}
+.back h3{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 25px;
+    font-family: cursive;
+    color: white;
+}
 
-.images{
-	min-height: 80vh;
-	overflow: hidden;
-	margin-top: 50px;
+.img,.img1{
+	width: 100%;
+	cursor: pointer;
+	margin-top: 25px;
 }
-.img1{
-	background: url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/1.jpg') no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 250px;
-	cursor:pointer;
-}
-.img2{
-	background: url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/2.jpg') no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 250px;
-	cursor:pointer;
-}
-.img3{
-	background: url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/3.jpg') no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 250px;
-	cursor:pointer;
-}
-.img4{
-	background: url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/4	.jpg') no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 250px;
-	cursor:pointer;
-}
-.img5{
-	background: url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/5.jpg') no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 250px;
-	cursor:pointer;
-}
-.img6{
-	background: url('https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/6.jpg') no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: 250px;
-	cursor:pointer;
-	
-}
-.images p{
-	font-size: 12px;
-	color: #6c757d;
-	font-weight: bolder;
-	text-align: center;
-	font-family: sans-serif;
-	position: relative;
-	top: 50%;left: 50%;
-	transform: translate(-50%,-50%);
-}
-.images h3{
-	color: #fff;
-	text-align: center;
-	font-size: 20px;
-	font-family: serif;
-	position: relative;
-	top: 50%;left: 50%;
-	transform: translate(-50%,-50%);
-	padding-bottom: 40px;
-}
+
+
 .download{
 	min-height: 60vh!important;
 	background-color: #343a40!important;
-	position: relative;
-	top: 50%;left: 50%;
-	transform: translate(-50%,-50%);
-	text-align: center;
 }
 .download h1{
 	font-size: 32px;
@@ -436,6 +396,7 @@ header{
 	color: #fff;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 .download-button{
 	display: flex;
@@ -449,9 +410,10 @@ header{
 	background-color:#fff;
 	margin-top: 30px;
 }
-.contact{
+#contact{
 	height: 60vh;
 	text-align: center;
+	margin-top: 150px;
 }
 .contact-h{
 	display: flex;
@@ -469,11 +431,16 @@ header{
 	transform: translate(-50%,-50%);
 	margin-top: 10px;
 }
+.contact-text{
+	display: flex;
+	justify-content: center;
+}
 .contact-text p{
-	font-size: 20px;
+	width: 600px;
+	font-size: 18px;
 	color: #6c757d;
 	text-align: center;
-	font-family: sans-serif;
+	font-family: cursive;
 	padding-top: 10px;
 }
 .fa-phone,.fa-envelope{
